@@ -4,5 +4,8 @@
     <string name="app_name">Gestiondettes</string>
     <string name="title">Application de Gestion des dettes</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_list_dettes">listDettes</string>
+    <string name="title_list_dettes">Liste des Dettes</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
