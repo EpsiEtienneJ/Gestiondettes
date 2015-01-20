@@ -7,5 +7,6 @@
     <string name="title_activity_list_dettes">listDettes</string>
     <string name="title_list_dettes">Liste des Dettes</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_dette">Ajouter une dette</string>
 
 </resources>

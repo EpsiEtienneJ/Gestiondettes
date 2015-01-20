@@ -6,15 +6,26 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="epsi.dettes.listDettes$PlaceholderFragment">
+    tools:context="epsi.dettes.addDette$PlaceholderFragment">
 
     <TextView
-        android:text="@string/title_list_dettes"
+        android:text="@string/title_activity_add_dette"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="22dp"
-        android:textIsSelectable="false" />
+        android:textIsSelectable="false"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:id="@+id/addDetteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="140dp" />
 
     <Button
         android:layout_width="wrap_content"

@@ -20,6 +20,10 @@
             android:name="epsi.dettes.listDettes"
             android:label="@string/title_activity_list_dettes" >
         </activity>
+        <activity
+            android:name="epsi.dettes.addDette"
+            android:label="@string/title_activity_add_dette" >
+        </activity>
     </application>
 
 </manifest>

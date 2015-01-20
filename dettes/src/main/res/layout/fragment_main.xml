@@ -21,23 +21,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ajouter une dette"
-        android:id="@+id/button"
+        android:id="@+id/add_dette"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
         android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="add_dette"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Liste des dettes"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
+        android:id="@+id/list_dettes"
+        android:layout_below="@+id/add_dette"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_alignRight="@+id/add_dette"
+        android:layout_alignEnd="@+id/add_dette"
+        android:onClick="list_dettes" />
 
 </RelativeLayout>
