@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="22dp"
-        android:textIsSelectable="false" />
+        android:textIsSelectable="false"
+        android:id="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,4 +26,23 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:id="@+id/retour"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="retour" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listDettes"
+        android:layout_below="@+id/retour"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="28dp" />
 </RelativeLayout>

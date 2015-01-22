@@ -1,6 +1,7 @@
 package epsi.dettes;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,15 +12,32 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 
-public class listDettes extends Activity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class listDettes extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_dettes);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, new PlaceholderFragment())
+                    .commit();
+        }
     }
 
+    public void retour(View view) {
+        Intent intent = new Intent(listDettes.this, MainActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,14 +64,45 @@ public class listDettes extends Activity {
      */
     public static class PlaceholderFragment extends Fragment {
 
+        Storage helper;
+        ArrayList<String> dataList;
+        List<Dette> detteList;
+        DetteAdapter adapter;
+
         public PlaceholderFragment() {
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
+            helper = new Storage(this.getActivity());
+
             View rootView = inflater.inflate(R.layout.fragment_list_dettes, container, false);
+
+            ListView lst = (ListView) rootView.findViewById(R.id.listDettes);
+            final Activity act = this.getActivity();
+
+
+            detteList = helper.getAll();
+            dataList = new ArrayList<String>();
+
+            for (Dette t: detteList){
+                dataList.add(t.title);
+            }
+
+            adapter = new DetteAdapter(this.getActivity(), detteList);
+            lst.setAdapter(adapter);
+
+
             return rootView;
+        }
+
+        public void reloadData() {
+
+            detteList.clear();
+            detteList.addAll(helper.getAll());
+            adapter.notifyDataSetChanged();
+
         }
     }
 

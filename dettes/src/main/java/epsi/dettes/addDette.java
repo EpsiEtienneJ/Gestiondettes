@@ -1,5 +1,7 @@
 package epsi.dettes;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -10,6 +12,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.Button;
+import android.widget.EditText;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class addDette extends ActionBarActivity {
 
@@ -23,6 +30,12 @@ public class addDette extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+    }
+
+    public void retour(View view) {
+        Intent intent = new Intent(addDette.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 
@@ -51,13 +64,32 @@ public class addDette extends ActionBarActivity {
      */
     public static class PlaceholderFragment extends Fragment {
 
+        Storage helper;
+        ArrayList<String> dataList;
+        List<Dette> todoList;
+        DetteAdapter adapter;
+
         public PlaceholderFragment() {
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
+            helper = new Storage(this.getActivity());
+
             View rootView = inflater.inflate(R.layout.fragment_add_dette, container, false);
+            Button btn = (Button) rootView.findViewById(R.id.addDetteButton);
+            final EditText titleDette = (EditText) rootView.findViewById(R.id.titleDette);
+
+            btn.setOnClickListener(new Button.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String title = titleDette.getText().toString();
+                    String name = "Etienne";
+                    helper.addDette(title, name);
+                }
+            });
+
             return rootView;
         }
     }
