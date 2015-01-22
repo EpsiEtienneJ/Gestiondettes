@@ -6,17 +6,24 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="166dp"
-        android:layout_height="28dp"
-        android:textSize="16dp"
-        android:text="Titre :"
-        android:id="@+id/textView" />
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:id="@+id/dette_title"
+        android:layout_weight="0.03" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/dette_title"
-        android:layout_gravity="center_horizontal" />
+        android:text="name"
+        android:id="@+id/dette_name"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="montant"
+        android:id="@+id/dette_montant"
+        android:layout_weight="0.03" />
 
 </LinearLayout>

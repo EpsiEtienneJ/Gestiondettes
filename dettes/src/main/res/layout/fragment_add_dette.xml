@@ -16,16 +16,13 @@
         android:textSize="22dp"
         android:textIsSelectable="false"
         android:id="@+id/textView" />
-
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Envoyer"
-        android:id="@+id/addDetteButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="140dp" />
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
@@ -37,16 +34,95 @@
         android:layout_alignParentEnd="true"
         android:onClick="retour" />
 
-    <EditText
+    <Button
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:id="@+id/addDetteButton"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/montantDette"
+        android:layout_alignRight="@+id/retour"
+        android:layout_alignEnd="@+id/retour" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre :"
+        android:textSize="16dp"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/titleDette"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="102dp"
         android:layout_height="wrap_content"
         android:id="@+id/titleDette"
         android:layout_below="@+id/retour"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toLeftOf="@+id/retour" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        android:textSize="16dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/titleDette"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameDette"
+        android:inputType="text"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignRight="@+id/titleDette"
+        android:layout_alignEnd="@+id/titleDette" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numéro :"
+        android:textSize="16dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/nameDette"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="32dp"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/numeroDette"
+        android:inputType="text"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignRight="@+id/nameDette"
+        android:layout_alignEnd="@+id/nameDette"
+        android:layout_toRightOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montant :"
+        android:textSize="16dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/montantDette"
+        android:inputType="text"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignRight="@+id/titleDette"
+        android:layout_alignEnd="@+id/titleDette" />
 
 </RelativeLayout>

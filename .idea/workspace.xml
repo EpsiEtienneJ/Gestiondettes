@@ -9,6 +9,14 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/dettes/src/main/res/layout/dette_item.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="173df12c-9f4f-4baf-843a-8fe56a53978f" name="Default" comment="" />
@@ -77,7 +85,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="448" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1207">
+            <state line="37" column="5" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -89,7 +97,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="32" selection-start="684" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="867">
+            <state line="14" column="32" selection-start="684" selection-end="716" vertical-scroll-proportion="-4.5185184" vertical-offset="116" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -98,16 +106,28 @@
       <file leaf-file-name="listDettes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1649">
+            <state line="80" column="0" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1836">
+              <folding>
+                <element signature="e#2998#3486#0" expanded="true" />
+                <element signature="e#3471#3472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addDette.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/addDette.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="20" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.76131046" vertical-offset="906" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addDette.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/addDette.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dettes/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="49" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="1751">
+            <state line="29" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -116,28 +136,16 @@
       <file leaf-file-name="Storage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Storage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2771">
+            <state line="148" column="0" selection-start="5515" selection-end="5515" vertical-scroll-proportion="0.0" vertical-offset="2176" max-vertical-offset="2941">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_add_dette.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/fragment_add_dette.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="47" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="986">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetteAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DetteAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/DetteAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="9" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.65102637" vertical-offset="900" max-vertical-offset="1360">
+            <state line="77" column="0" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1411">
               <folding />
             </state>
           </provider>
@@ -149,19 +157,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="595" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_list_dettes.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/fragment_list_dettes.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="918">
+            <state line="25" column="38" selection-start="838" selection-end="838" vertical-scroll-proportion="-15.740741" vertical-offset="0" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -546,14 +542,15 @@
         <option value="$PROJECT_DIR$/dettes/src/main/res/layout/activity_list_dettes.xml" />
         <option value="$PROJECT_DIR$/dettes/src/main/res/layout/fragment_main.xml" />
         <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/MainActivity.java" />
-        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Dette.java" />
-        <option value="$PROJECT_DIR$/dettes/src/main/res/layout/dette_item.xml" />
         <option value="$PROJECT_DIR$/dettes/src/main/res/layout/fragment_list_dettes.xml" />
         <option value="$PROJECT_DIR$/dettes/src/main/res/layout/fragment_add_dette.xml" />
-        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Storage.java" />
-        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/addDette.java" />
-        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java" />
+        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Dette.java" />
+        <option value="$PROJECT_DIR$/dettes/src/main/res/layout/dette_item.xml" />
         <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/DetteAdapter.java" />
+        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java" />
+        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Storage.java" />
+        <option value="$PROJECT_DIR$/dettes/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/addDette.java" />
       </list>
     </option>
   </component>
@@ -983,6 +980,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15671642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -992,7 +990,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5811578" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24063565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1005,7 +1003,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15671642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1027,26 +1024,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/fragment_add_dette.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="43" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/fragment_list_dettes.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="25" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1207">
@@ -1067,7 +1044,10 @@
     <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1122">
-          <folding />
+          <folding>
+            <element signature="e#2998#3486#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,7 +1064,13 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="43" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="765">
-          <folding />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+            <element signature="e#543#577#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,7 +1104,10 @@
     <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1122">
-          <folding />
+          <folding>
+            <element signature="e#2998#3486#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,7 +1124,13 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="43" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="765">
-          <folding />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+            <element signature="e#543#577#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,7 +1164,10 @@
     <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1122">
-          <folding />
+          <folding>
+            <element signature="e#2998#3486#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1186,7 +1184,13 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="43" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="765">
-          <folding />
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+            <element signature="e#543#577#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1330,13 +1334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/activity_list_dettes.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1364,16 +1361,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Dette.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.36115327" vertical-offset="0" max-vertical-offset="659">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/fragment_list_dettes.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+      <provider editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
@@ -1383,7 +1376,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="684" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="867">
+        <state line="14" column="32" selection-start="684" selection-end="716" vertical-scroll-proportion="-4.5185184" vertical-offset="116" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
@@ -1393,31 +1386,41 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="47" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="986">
+        <state line="36" column="4" selection-start="1363" selection-end="1363" vertical-scroll-proportion="-7.3703704" vertical-offset="413" max-vertical-offset="2278">
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+            <element signature="e#543#577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Dette.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.5448718" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Storage.java">
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/menu/add_dette.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/layout/fragment_list_dettes.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/menu/list_dettes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="918">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/addDette.java">
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="49" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1479">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
@@ -1427,28 +1430,52 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="595" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="448" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1649">
+        <state line="25" column="38" selection-start="838" selection-end="838" vertical-scroll-proportion="-15.740741" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/DetteAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="9" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.65102637" vertical-offset="900" max-vertical-offset="1360">
+        <state line="77" column="0" selection-start="2345" selection-end="2345" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/Storage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="0" selection-start="5515" selection-end="5515" vertical-scroll-proportion="0.0" vertical-offset="2176" max-vertical-offset="2941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/listDettes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1836">
+          <folding>
+            <element signature="e#2998#3486#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dettes/src/main/java/epsi/dettes/addDette.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="20" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.76131046" vertical-offset="906" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>

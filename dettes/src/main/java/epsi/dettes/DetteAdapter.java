@@ -60,23 +60,26 @@ public class DetteAdapter extends BaseAdapter {
         holder.titleView.setText(todo.title);
         return convertView;*/
 
-        TextView txt = null;
+        TextView title, name, montant = null;
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.dette_item,
                     parent, false);
-            txt = (TextView) convertView.findViewById(R.id.dette_title);
-
-
+            title = (TextView) convertView.findViewById(R.id.dette_title);
+            name = (TextView) convertView.findViewById(R.id.dette_name);
+            montant = (TextView) convertView.findViewById(R.id.dette_montant);
 
         } else {
-            txt = (TextView) convertView.findViewById(R.id.dette_title);
+            title = (TextView) convertView.findViewById(R.id.dette_title);
+            name = (TextView) convertView.findViewById(R.id.dette_name);
+            montant = (TextView) convertView.findViewById(R.id.dette_montant);
         }
 
         Dette current = data.get(position);
-        txt.setText(current.title + " name : " + current.name);
-        txt.setTag(current);
+        title.setText("Titre : " + current.title);
+        name.setText("Nom : " + current.name);
+        montant.setText("Montant : " + current.montant);
         return convertView;
     }
 }

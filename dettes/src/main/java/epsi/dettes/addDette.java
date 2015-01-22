@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -80,13 +81,27 @@ public class addDette extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_add_dette, container, false);
             Button btn = (Button) rootView.findViewById(R.id.addDetteButton);
             final EditText titleDette = (EditText) rootView.findViewById(R.id.titleDette);
+            final EditText nameDette = (EditText) rootView.findViewById(R.id.nameDette);
+            final EditText numeroDette = (EditText) rootView.findViewById(R.id.numeroDette);
+            final EditText montantDette = (EditText) rootView.findViewById(R.id.montantDette);
+
 
             btn.setOnClickListener(new Button.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     String title = titleDette.getText().toString();
-                    String name = "Etienne";
-                    helper.addDette(title, name);
+                    String name = nameDette.getText().toString();
+                    String numero = numeroDette.getText().toString();
+                    String montant = montantDette.getText().toString();
+                    helper.addDette(title, name, numero, montant);
+
+                    final String msg = "Salut, je te dois " + montant + "€ pour " + title;
+
+                    SmsManager.getDefault().sendTextMessage(numero, null, msg, null, null);
+                    
+                    Intent redirect = new Intent(v.getContext(),listDettes.class);
+                    startActivity(redirect);
                 }
             });
 

@@ -41,8 +41,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/listDettes"
         android:layout_below="@+id/retour"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_marginRight="65dp"
         android:layout_marginTop="28dp" />
 </RelativeLayout>

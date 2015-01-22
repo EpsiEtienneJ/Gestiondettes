@@ -17,7 +17,7 @@ public class Storage extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "FeedReader.db";
 
     private static final String SQL_UP_0 =
-            "CREATE TABLE dette (dette_id INTEGER PRIMARY KEY, title TEXT, name TEXT)";
+            "CREATE TABLE dette (dette_id INTEGER PRIMARY KEY, title TEXT, name TEXT, numero TEXT, montant TEXT)";
 
     private static final String SQL_DOWN_0 = "DROP TABLE IF EXISTS dette";
 
@@ -25,11 +25,11 @@ public class Storage extends SQLiteOpenHelper {
             "ALTER Table dette ADD date TEXT";
 
     private static final String SQL_DOWN_1 = "BEGIN TRANSACTION;" +
-            "CREATE TEMPORARY TABLE dette_backup(dette_id,title,name);\n" +
-            "INSERT INTO dette_backup SELECT dette_id,title,name FROM dette;\n" +
+            "CREATE TEMPORARY TABLE dette_backup(dette_id,title,name, numero, montant);\n" +
+            "INSERT INTO dette_backup SELECT dette_id,title,name, numero, montant FROM dette;\n" +
             "DROP TABLE dette;\n" +
             SQL_UP_0 +
-            "INSERT INTO todo SELECT dette_id,title,checked FROM dette_backup;\n" +
+            "INSERT INTO todo SELECT dette_id,title, name, numero, montant FROM dette_backup;\n" +
             "DROP TABLE dette_backup;\n" +
             "COMMIT;";
 
@@ -37,11 +37,11 @@ public class Storage extends SQLiteOpenHelper {
             "ALTER Table dette ADD date_done TEXT";
 
     private static final String SQL_DOWN_2 = "BEGIN TRANSACTION;" +
-            "CREATE TEMPORARY TABLE todo_backup(dette_id,title,name,date);\n" +
-            "INSERT INTO dette_backup SELECT dette_id,title,name,date FROM dette;\n" +
+            "CREATE TEMPORARY TABLE todo_backup(dette_id,title,name,date, numero, montant);\n" +
+            "INSERT INTO dette_backup SELECT dette_id,title,name,date, numero, montant FROM dette;\n" +
             "DROP TABLE dette;\n" +
             SQL_UP_0 +
-            "INSERT INTO dette SELECT dette_id,title,name,date FROM dette_backup;\n" +
+            "INSERT INTO dette SELECT dette_id,title,name,date, numero, montant FROM dette_backup;\n" +
             "DROP TABLE dette_backup;\n" +
             "COMMIT;";
 
@@ -50,6 +50,15 @@ public class Storage extends SQLiteOpenHelper {
     }
 
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL(SQL_UP_0);
+    }
+
+    public void delete() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL(SQL_DOWN_0);
+    }
+    public void create() {
+        SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL(SQL_UP_0);
     }
 
@@ -76,11 +85,13 @@ public class Storage extends SQLiteOpenHelper {
         }
     }
 
-    public void addDette(String title, String name) {
+    public void addDette(String title, String name, String numero, String montant) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("title", title);
         values.put("name", name);
+        values.put("numero", numero);
+        values.put("montant", montant);
         db.insert("dette", null, values);
         db.close();
     }
@@ -89,7 +100,7 @@ public class Storage extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query("dette",                  //table
-                new String[] { "dette_id", "title", "name" }, // columns
+                new String[] { "dette_id", "title", "name", "numero", "montant" }, // columns
                 "dette_id" + "=?",                               // WHERE clause
                 new String[] { String.valueOf(id) },            // WHERE arguments
                 null,                                           // GROUP BY
@@ -101,7 +112,9 @@ public class Storage extends SQLiteOpenHelper {
 
         Dette dette = new Dette(Integer.parseInt(cursor.getString(0)),
                 cursor.getString(1),
-                cursor.getString(2));
+                cursor.getString(2),
+                cursor.getString(3),
+                cursor.getString(4));
         return dette;
     }
 
@@ -117,7 +130,9 @@ public class Storage extends SQLiteOpenHelper {
             do {
                 Dette dette = new Dette(Integer.parseInt(cursor.getString(0)),
                         cursor.getString(1),
-                        cursor.getString(2));
+                        cursor.getString(2),
+                        cursor.getString(3),
+                        cursor.getString(4));
 
                 detteList.add(dette);
             } while (cursor.moveToNext());
@@ -141,6 +156,8 @@ public class Storage extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put("title", dette.title);
         values.put("name", dette.name);
+        values.put("numero", dette.numero);
+        values.put("montant", dette.montant);
 
         return db.update("Dette",
                 values,
